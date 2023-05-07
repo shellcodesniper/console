@@ -1,11 +1,7 @@
 ---
 title: /post
-layout: post
+layout: post_home
 category: none
 permalink: /post/
 ---
-
-# asdf
-
-asdfsadf
 
