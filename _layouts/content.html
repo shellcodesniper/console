@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="content-info">
+  {% assign post = page %}
+  {% assign date_format = "%Y-%m-%d" %}
+
+  {% assign category = "none" %}
+  {% assign hasKey = post | key: 'category' %}
+  {% if hasKey and post.category != "" %}
+  {% assign category = post.category %}
+  {% endif %}
+  &lt;Ct: {{post.category}}&gt; [ {{ post.date | date: date_format }} ] {{post.title | escape }}
+</div>
+
+{{ content }}

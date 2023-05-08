@@ -1,18 +1,39 @@
-# Example Site settings
+title: "[QL.GL]"
+url: "https://ql.gl"
 
-#google_analytics: UA-NNNNNNNN-N
+logo: /siteicon.png
+description: "ql.gl.,"
+author:
+  name: KUUWANGE
+  email: root@ql.gl
+  affilination: Caramella Inc.
+  twitter: # twitter username without the @ symbol
+
+timezone: Asia/Seoul
+
+permalink: /post/:categories/:title:output_ext
+
+listen_for_clients_preferred_style: true # true or false (default)
+#style: light # dark (default) or light
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+
+category_list: [ none, diary, hacking ]
 
 header_pages:
  - index.md
  - about.md
  - post.md
 
+
 #footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
-
-#style: light # dark (default) or light
-listen_for_clients_preferred_style: true # true or false (default)
-
-plugins:
-  - jekyll-seo-tag
-
-category_list: [ none, diary, hacking ]
