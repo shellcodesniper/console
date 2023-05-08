@@ -1,7 +1,3 @@
-/**
- * Hacker theme variables
- */
-
 :root {
   --base-color: #00ff00;
   --impact-color: #00ff00;
@@ -9,9 +5,9 @@
   --selection-background: rgba(0, 255, 0, 0.99);
   --selection-text: #000;
   --background-color: #000;
-  --text-color: var(--base-color);
-  --placeholder-color: var(--base-color);
-  --link-color: var(--base-color);
+  --text-color: #DBDBDB;
+  --placeholder-color: #DBDBDB;
+  --link-color: #00ffff;
   --code-color-1: #aaaaaa;
   --code-color-2: #ffffcc;
   --code-color-3: #F00000;
@@ -31,3 +27,4 @@
   --code-color-17: #800000;
   --code-color-18: #bbbbbb;
 }
+
