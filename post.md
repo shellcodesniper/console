@@ -1,6 +1,6 @@
 ---
 title: /post
-layout: post_home
+layout: post
 category: none
 permalink: /post/
 ---

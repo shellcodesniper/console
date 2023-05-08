@@ -3,3 +3,37 @@ layout: default
 ---
 
 {{ content }}
+
+<h1>Posts</h1>
+  {%assign groups = site.posts | group_by:"category" | reverse %}
+  
+
+{% if site.posts.size > 0 %}
+  <ul>
+    {% assign category_target = "none" %}
+
+  {% for category in groups %}
+    {% assign grouped_site = category.items | sort: 'date' %}
+    {% for post in grouped_site %}
+        {% if post.category != category_target %}
+          {% assign category_target = post.category %}
+          <h2>&lt;Ct: {{ category_target }}&gt;</h2>
+        {% endif %}
+
+        {% assign p_category = "none" %}
+
+        {% assign hasKey = post | key: 'category' %}
+        {% if hasKey and post.category != "" %}
+          {% assign p_category = post.category %}
+        {% else %}
+          {% assign p_category = "none" %}
+        {% endif %}
+        <li>
+          {% assign date_format = "%Y-%m-%d" %}
+          &lt;Ct: {{p_category}}&gt; [ {{ post.date | date: date_format }} ] <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </li>
+      {% endfor %}
+    {% endfor %}
+  </ul>
+{% endif %}
+
