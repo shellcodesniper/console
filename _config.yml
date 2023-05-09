@@ -1,13 +1,21 @@
-title: "[QL.GL]"
+title: "Qurious LMAO GEEK LIFE"
+description: "Curiosity and Geek Things In My Life."
 url: "https://ql.gl"
 
 logo: /siteicon.png
 description: "ql.gl.,"
 author:
-  name: KUUWANGE
+  name: KuuwangE
   email: root@ql.gl
-  affilination: Caramella Inc.
+  affilination: Caramella Inc.,
   twitter: # twitter username without the @ symbol
+
+social:
+  name: KuuwangE
+  links:
+    - https://www.linkedin.com/in/kuuwange
+    - https://github.com/shellcodesniper
+    - https://www.instagram.com/kkiyaaaaaaaal
 
 timezone: Asia/Seoul
 
