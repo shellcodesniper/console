@@ -11,6 +11,7 @@ temporary_link: https://www.usenix.org/system/files/conference/usenixsecurity15/
 ## Overall Strength
 
 ## In-depth review
+> Must Include Personal Review
 
 ## Future Work
 
