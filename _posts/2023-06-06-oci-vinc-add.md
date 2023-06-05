@@ -43,3 +43,5 @@ WantedBy=default.target
 sudo chmod 664 /etc/systemd/system/secondary_vnic_all_configure.service
 sudo systemctl enable /etc/systemd/system/secondary_vnic_all_configure.service
 ```
+
+NOW, REBOOT!
