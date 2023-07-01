@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: "ko" }}">
   {%- include head.html -%}
   <body>
     <div class="site-logo">
       ⓆⓁ.ⒼⓁ
+    </div>
+
+    <div class="hits">
+      <a href="{{ page.url }}">
+        <!-- NOTE : Page Individually Counted. -->
+        <!-- {%- assign full_url = page.url|replace:'/','%2F'|escape -%} -->
+        <!-- <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%4A%2F%2Fql.gl{{ full_url }}&title_bg=%23555555&icon=hackerearth.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false" /> -->
+
+        <!-- NOTE : Site Counted. -->
+        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%4A%2F%2Fql.gl&count_bg=%23151515&title_bg=%23000000&icon=hackerearth.svg&icon_color=%234AF100&title=VISIT&edge_flat=true" />
+      </a>
     </div>
     <div class="container">
       {%- include header.html -%}
