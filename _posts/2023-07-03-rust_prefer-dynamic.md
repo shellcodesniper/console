@@ -58,3 +58,23 @@ prefer-dynamic = { version = "0", features = ["link-test"] }
 
 
 ```
+
+## But... If Error Still Occurs,
+
+> Try this
+>
+
+### MAC OS X
+``` bash
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$PWD"
+sudo ldconfig
+./a.out
+```
+
+
+### LINUX
+``` bash
+export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$PWD"
+./a.out
+
+```
