@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import './fonts.css'
 import Head from 'next/head'
+import Header from '@/components/shared/Header'
 
 // Font : "Monocraft","Mabry Pro","Gotham Bold","Spline Sans","Helvetica Neue","Google Sans","Work Sans",Arial,sans-serif
 
@@ -35,7 +36,10 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css?family=Spline+Sans|Work+Sans|Fira+Mono|Fira+Sans|Google+Sans|Lexend+Deca&amp;display=swap" rel="stylesheet"></link>
       </Head>
       <body className={"None"}>
-        {children}
+        <Header />
+        <main>
+          {children}
+        </main>
       </body>
     </html>
   )
