@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,12 +12,88 @@
   }
 }
 
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Monocraft", "Mabry Pro", "Gotham Bold", "Spline Sans", "Helvetica Neue", "Google Sans", "Work Sans", Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing:1pt
+}
+
+header h1, .page-heading {
+  font-family: "Gotham Bold", "Monocraft", "Mabry Pro", "Ndot-55"
+}
+
+.title {
+  font-family: 'Monocraft';
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
+  margin-bottom:15px
+}
+
+main {
+  display:block
+}
+
+img {
+  max-width: 100%;
+  vertical-align:middle
+}
+
+figure > img {
+  display:block
+}
+
+figcaption {
+  font-size:11.375pt
+}
+
+ul, ol {
+  margin-left: 30px;
+  word-break:break-word
+}
+
+li > ul, li > ol {
+  margin-bottom: 0;
+  word-break:break-word
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight:500
+}
+
+blockquote {
+  color: #828282;
+  padding-left: 15px;
+  font-size: 14.625pt;
+  letter-spacing: -1px;
+  font-style:italic
+}
+
+blockquote > :last-child {
+  margin-bottom:0
+}
+
+.wrapper {
+  max-width: -webkit-calc(100ch -(30px * 2));
+  max-width: calc(100ch -(30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left:30px
 }
